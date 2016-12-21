@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
+// Imports the Entirety of ng2-bootstrap.  It is possible to just include a subset of the
+// modules:   CollapseModule, DropdownModule, TabsModule, TooltipModule, ModalModule, etc.
+import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap'
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -16,6 +20,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     BrowserModule,
     HttpModule,
     FormsModule,
+    Ng2BootstrapModule,
     routing
   ],
   declarations: [

@@ -174,6 +174,10 @@ module.exports = function makeWebpackConfig() {
     // Tslint configuration for webpack 2
     new webpack.LoaderOptionsPlugin({
       options: {
+        context: config.output.path,
+        output: {
+          path: config.output.path
+        },
         /**
          * Apply the tslint loader as pre/postLoader
          * Reference: https://github.com/wbuchwalter/tslint-loader

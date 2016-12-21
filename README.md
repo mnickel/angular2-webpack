@@ -1,4 +1,25 @@
 # angular2-webpack
+## preboot with ng2-bootstrap
+
+This is a fork of the main preboot webpack starter toolkit that enables some additional packages to help jumpstart development.
+
+I personally need some widgets and UI goodness out of the box so after much scouring of the interwebs, I'm finally putting this repo together.
+
+Additional packages installed:
+
+* https://github.com/valor-software/ng2-bootstrap
+	* more information about NgModule loading:  https://github.com/valor-software/ng2-bootstrap/blob/development/docs/getting-started/aot.md
+* https://github.com/shakacode/bootstrap-loader
+	* Note that this is bootstrap v3 *not* v4
+	* of particular interest will be the .bootstraprc file.  It is basically the default offering from the bootstrap-loader project however, all the javascript components are disabled.  All of that is provided by the ng2-bootstrap framework.
+
+
+If you require additional widgets that are not included within bootstrap, the Valor Software group also provides this set to help round things out:
+* https://github.com/valor-software/ng2-plans
+
+
+
+# angular2-webpack
 
 [![Dependency Status](https://david-dm.org/preboot/angular2-webpack/status.svg)](https://david-dm.org/preboot/angular2-webpack#info=dependencies) [![devDependency Status](https://david-dm.org/preboot/angular2-webpack/dev-status.svg)](https://david-dm.org/preboot/angular2-webpack#info=devDependencies)
 [![Join the chat at https://gitter.im/preboot/angular2-webpack](https://badges.gitter.im/preboot/angular2-webpack.svg)](https://gitter.im/preboot/angular2-webpack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
